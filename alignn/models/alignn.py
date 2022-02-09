@@ -293,7 +293,7 @@ class ALIGNN(nn.Module):
             # angle features (fixed)
             z = self.angle_embedding(lg.edata.pop("h"))
 
-            # phi = self.dih_embedding(lgg.edata.pop("phi"))
+            phi = self.dih_embedding(lgg.edata.pop("phi"))
             # print ('phi',phi,phi.shape)
             # print ('z',z,z.shape)
 
