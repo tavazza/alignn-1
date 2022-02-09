@@ -665,4 +665,5 @@ if __name__ == "__main__":
     config = TrainingConfig(
         random_seed=123, epochs=10, n_train=32, n_val=32, batch_size=16
     )
+    print ("Pippo")
     history = train_dgl(config, progress=True)
