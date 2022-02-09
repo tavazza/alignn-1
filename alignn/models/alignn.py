@@ -285,6 +285,7 @@ class ALIGNN(nn.Module):
         y: bond features (g.edata and lg.ndata)
         z: angle features (lg.edata)
         """
+        print("CIAO_0")
         if len(self.alignn_layers) > 0:
             g, lg, lgg = g
             lg = lg.local_var()
@@ -293,7 +294,8 @@ class ALIGNN(nn.Module):
             # angle features (fixed)
             z = self.angle_embedding(lg.edata.pop("h"))
 
-            phi = self.dih_embedding(lgg.edata.pop("phi"))
+            print ("CIAO 1")
+            # phi = self.dih_embedding(lgg.edata.pop("phi"))
             # print ('phi',phi,phi.shape)
             # print ('z',z,z.shape)
 
